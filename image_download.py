@@ -20,5 +20,5 @@ if __name__ == '__main__':
     cnt = 1
     for file_name, url in zip(dedu_df['contact'], dedu_df['link']):
         cnt += 1
-        file_name = str(cnt) + "_" + file_name
+        file_name = str(cnt) + "_" + file_name +'.png' # 확장자 설정
         download_image(file_name, url)
