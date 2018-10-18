@@ -20,7 +20,7 @@ class Wallet:
                 balance += cash * self.wallet_money.get(cash)
 		self.balance = balance
     
-	    def calculate_balance(self):
+    def calculate_balance(self):
         balance = 0
         for cash in self.wallet_money.keys():
             if self.wallet_money.get(cash) is not 0:
